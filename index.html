@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="./dist/output.css" rel="stylesheet"> -->
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css"
+    />
+    <title>Sistema Js</title>
+  </head>
+  <body
+    class="bg-neutral-900 text-white h-screen flex items-center justify-center"
+  >
+    <div class="bg-neutral-800 rounded-xl p-5 w-[90%] lg:w-[50%] 2xl:w-[40%] flex justify-center items-center
+    flex-col">
+      <h2 class="text-3xl text-center">Login</h2>
+      <form class="mt-16 w-full md:px-6">
+        <div class="relative z-0">
+          <input
+            type="text"
+            id="email"
+            class="block py-2.5 px-0 w-full text-sm text-gray-100 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+          />
+          <label
+            for="email"
+            class="absolute text-sm text-gray-100 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Email</label
+          >
+        </div>
+
+
+        <div class="relative z-0 mt-10">
+          <input
+            type="text"
+            id="password"
+            class="block py-2.5 px-0 w-full text-sm text-gray-100 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+          />
+          <label
+            for="password"
+            class="absolute text-sm text-gray-100 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Senha</label
+          >
+        </div>
+
+        <div class="text-center mt-16  ">
+          <button class="bg-blue-700 py-2 w-full rounded-md mb-7 font-bold hover:bg-blue-800 duration-300">Entrar</button>
+
+          <a href="./src/pages/cadastro.html" class="cursor-pointer hover:text-blue-600 duration-300">Não possui senha ? faça seu cadastro</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.js"></script>
+    <script type="module" src="./src/scripts/login.js"></script>
+  </body>
+</html>
