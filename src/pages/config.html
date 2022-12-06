@@ -48,7 +48,7 @@
                   ></path>
                 </svg>
               </a>
-              
+              <a id="sair">
               <svg
                 class="w-8 h-8 text-gray-400 cursor-pointer"
                 fill="none"
@@ -206,5 +206,16 @@
     <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
     <script src="../path/to/flowbite/dist/flowbite.js"></script>
     <script type="module" src="../scripts/editarUsuario.js"></script>
+    <script type="module">
+      import {setUser} from '../scripts/localStorage';
+      document.querySelector('#sair').addEventListener("click", nameFunction)
+
+      function nameFunction(){
+        let userLogado = null
+        setUser(userLogado)
+        location.reload()
+      };
+      
+    </script>
   </body>
 </html>

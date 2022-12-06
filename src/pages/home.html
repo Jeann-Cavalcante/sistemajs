@@ -88,6 +88,7 @@
                   ></path>
                 </svg>
               </a>
+              <a id="sair">
               <svg
                 class="w-8 h-8 ml-2 text-gray-400 cursor-pointer"
                 fill="none"
@@ -102,7 +103,7 @@
                   d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
                 ></path>
               </svg>
-              <a href="#"></a>
+              </a>
             </div>
             <button
               data-collapse-toggle="navbar-search"
@@ -288,5 +289,18 @@
     <script src="../path/to/flowbite/dist/flowbite.js"></script>
     <script type="module" src="../scripts/localStorage.js"></script>
     <!-- <script src="../components/menu.js"></script> -->
+
+
+    <script type="module">
+      import {setUser} from '../scripts/localStorage';
+      document.querySelector('#sair').addEventListener("click", nameFunction)
+
+      function nameFunction(){
+        let userLogado = null
+        setUser(userLogado)
+        location.reload()
+      };
+      
+    </script>
   </body>
 </html>
