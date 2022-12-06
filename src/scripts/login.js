@@ -13,7 +13,6 @@ form.addEventListener("submit", (e) => {
 
   if (verificaEmail && verificaSenha) {
     const user = usuarios.find((usuario) => usuario.email === email);
-    console.log(user);
     gerandoUser(user);
     window.location.href = "./src/pages/home.html";
   } else {
@@ -28,5 +27,3 @@ function gerandoUser(user){
   const userLogado = [{ ...user, token: token }];
   setUser(userLogado);
 };
-
-console.log(getDados());

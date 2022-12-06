@@ -5,12 +5,9 @@ import {
   setUser,
 } from "./localStorage";
 
-// verificaToken()
-
 const form = document.querySelector("form");
 
   let user = getUser();
-  console.log(user);
 
   let email = document.getElementById('email');
   email.value = user[0].email;
@@ -22,7 +19,6 @@ form.addEventListener("submit", EditeUser);
 
   function EditeUser(e){
     e.preventDefault();
-    console.log(e.target[2].value);
 
     if (!e.target[2].value == "") {
 

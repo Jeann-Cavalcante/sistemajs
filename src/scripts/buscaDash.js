@@ -2,9 +2,6 @@ var filtro = document.querySelector("#search-navbar");
 var filtroDesk = document.querySelector("#search-navbar-desk");
 var cards = document.querySelectorAll(".card h5");
 
-console.log(filtroDesk);
-console.log(filtro);
-
 filtro.addEventListener("keyup", filtroDosCards);
 filtroDesk.addEventListener("keyup", filtroDosCardsDesk);
 
