@@ -1,6 +1,7 @@
 import { getDados, setDados } from "./localStorage";
 
 let usuarios = getDados();
+console.log(usuarios);
 
 const form = document.querySelector("form");
 
@@ -17,6 +18,8 @@ function cadastrarDados(e) {
   };
 
   const validaSenha = e.target[3].value;
+  console.log(Array.isArray(usuarios));
+  console.log(usuarios);
   const emailExiste = usuarios.find((usuario) => usuario.email === cadastro.email);
 
   if (cadastro.senha != validaSenha) {
@@ -27,10 +30,10 @@ function cadastrarDados(e) {
   }else {
     usuarios.push(cadastro);
     console.log(usuarios);
-    setDados()
+    setDados(usuarios);
     e.target.reset();
     alert('usuario  cadastrados com sucesso'); 
-    window.location.href = "../../index.html";
+    // window.location.href = "../../index.html";
   }
 
   console.log(usuarios);
